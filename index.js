@@ -20,6 +20,8 @@ strecho.intent('LastActivity', {}, (req, res) => {
 });
 
 app.post('/strecho', (req, res) => {
+    console.log('received post to /strecho');
+    console.log(req);
     strecho.request(req.body).then(res.json);
 });
 
