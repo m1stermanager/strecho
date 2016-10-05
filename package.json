@@ -1,0 +1,30 @@
+{
+  "name": "strecho",
+  "version": "1.0.0",
+  "description": "trying to make echo and strava be best friends",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m1stermanager/strecho.git"
+  },
+  "keywords": [
+    "strava",
+    "echo"
+  ],
+  "author": "josh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m1stermanager/strecho/issues"
+  },
+  "homepage": "https://github.com/m1stermanager/strecho#readme",
+  "dependencies": {
+    "alexa-app": "^2.3.4",
+    "alexa-sdk": "^1.0.6",
+    "express": "^4.14.0",
+    "strava-v3": "^1.12.1"
+  }
+}
