@@ -19,25 +19,18 @@ strecho.intent('LastActivity', {}, (request, response) => {
         }
 
         var item = payload[0];
-        // console.log('payload');
-        // console.log(payload);
 
         var miles = convert(item.distance).from('m').to('mi');
         console.log(`strava says: ${miles} miles`);
 
-        response.say(`Wow! you ran ${miles} miles today! great job!`);
-        response.send();
+        response.say(`Wow! you ran ${miles} miles today! great job!`)
+            .send();;
     });
 
     return false;
 });
 
 strecho.express(app, '', false);
-// app.post('/strecho', (req, res) => {
-//     console.log('received post to /strecho');
-//     console.log(req.body);
-//     strecho.request(req.body).then(res.json, res.send);
-// });
 
 var port = process.env.PORT || 3000;
 app.listen(port, () => {
